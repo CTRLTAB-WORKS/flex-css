@@ -1,0 +1,100 @@
+/* display related  */
+.d{
+    width: 100%;
+}
+.d-flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.d-hide{
+    display: none;
+}
+.no-wrap{
+    flex-wrap: nowrap !important;
+}
+/* Direction Related  */
+.d-row{
+    flex-direction: row;
+}
+.d-col{
+    flex-direction: column;
+}
+
+/* reversing  */
+.row-rev{
+    flex-direction: row-reverse;
+}
+.col-rev{
+    flex-direction: column-reverse;
+}
+
+/* alignment  */
+.a-sb{
+    justify-content: space-between !important;
+}
+.a-hc{
+    justify-content: center;
+    text-align: center;
+}
+.a-hl{
+    justify-content:flex-start !important;
+    text-align: left;
+}
+.a-hr{
+    justify-content:flex-end !important;
+    text-align:right;
+}
+.a-vc{
+    align-items: center;
+    vertical-align: middle;
+}
+.p-x{
+    padding-left:20px !important;
+    padding-right:20px !important;
+}
+.p-y {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.m-hauto{
+    margin: 0 auto;
+}
+
+/* images related  */
+.img-fit{
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 130px;
+    max-height: 60vh;
+    width:90%;
+}
+
+/* mdeia query */
+@media screen and (max-width: 728px) {
+    /* dispaly related */
+    .d{
+        flex-direction: column;
+    }
+    .m-row{
+        flex-direction: row !important;
+    }
+    .m-hide{
+        display: none !important;
+    }
+    /* row reverse mobile */
+    .m-cr{
+        flex-direction: column-reverse;
+    }
+    /* Mobile center */
+    .m-ac{
+        text-align: center !important;
+        justify-content: center;
+    }
+    /* Mobile text left */
+    .t-l{
+        padding: 0 2rem;
+        text-align: left;
+    }
+}
